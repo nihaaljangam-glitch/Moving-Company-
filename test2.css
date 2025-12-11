@@ -127,7 +127,7 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
 }
-.main {
+.hero {
   position: relative;
   min-height: 100vh;
   padding-top: 80px;
@@ -137,7 +137,7 @@ body {
   overflow: hidden;
 }
 
-.main::before {
+.hero::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -145,7 +145,7 @@ body {
   opacity: 0.3;
 }
 
-.main-content {
+.hero-content {
   position: relative;
   z-index: 10;
   text-align: center;
@@ -166,7 +166,7 @@ body {
   font-weight: 500;
 }
 
-.main h1 {
+.hero h1 {
   font-size: 3.5rem;
   font-weight: 700;
   color: white;
@@ -174,19 +174,19 @@ body {
   line-height: 1.2;
 }
 
-.main h1 span {
+.hero h1 span {
   color: var(--primary);
   display: block;
 }
 
-.main p {
+.hero p {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.8);
   max-width: 600px;
   margin: 0 auto 2rem;
 }
 
-.trust {
+.trust-stats {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -207,7 +207,7 @@ body {
   color: var(--accent);
 }
 
-.mark-value {
+.quote-form-wrapper {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -242,11 +242,11 @@ body {
   color: var(--destructive);
 }
 
-.input-place {
+.input-wrapper {
   position: relative;
 }
 
-.input-place svg {
+.input-wrapper svg {
   position: absolute;
   left: 0.75rem;
   top: 50%;
@@ -382,84 +382,5 @@ body {
   color: var(--muted);
   line-height: 1.7;
 }
-.fare-page-wrapper {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  color: #333;
-}
 
-.fare-container {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
 
-.fare-container h1 {
-  color: #007bff;
-  text-align: center;
-  font-size: 1.75rem;
-}
-
-.fare-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.fare-form label {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.fare-form input,
-.fare-form select {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.fare-btn {
-  margin-top: 20px;
-  padding: 12px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.fare-btn:hover {
-  background-color: #218838;
-}
-
-#redirectBtn {
-  background-color: #007bff;
-  margin-top: 10px;
-}
-
-#redirectBtn:hover {
-  background-color: #0056b3;
-}
-
-#result {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
-  border-radius: 4px;
-  display: none;
-}
-
-.breakdown {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.breakdown p {
-  margin: 5px 0;
-}

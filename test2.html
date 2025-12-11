@@ -6,7 +6,7 @@
   <title>MoveSmart - Trusted Packers & Movers in India</title>
   <meta name="description" content="Professional packers and movers with guaranteed safe delivery. Get instant quote for home relocation, office shifting, and vehicle transport across India.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="landing.css">
 </head>
 <body>
   <header class="header">
@@ -32,21 +32,21 @@
   </header>
 
   <main>
-    <section class="main">
-      <div class="container main-content">
+    <section class="hero">
+      <div class="container hero-content">
         <div class="trust-badge">
           Trusted by 50,000+ Families
         </div>
         <h1>Move Your Home <span>Stress-Free &amp; Safe</span></h1>
         <p>Professional packers &amp; movers with guaranteed safe delivery. Get an instant quote and experience hassle-free relocation.</p>
 
-        <div class="trust">
+        <div class="trust-stats">
           <div class="trust-stat">1000+ Trucks</div>
           <div class="trust-stat">4.8 Rating</div>
           <div class="trust-stat">₹5 Lakh Insurance</div>
         </div>
 
-        <div class="mark-value" id="quote">
+        <div class="quote-form-wrapper" id="quote">
           <form class="quote-form" id="priceForm">
             <div class="form-grid">
               <div class="form-group">
@@ -85,13 +85,15 @@
                   <option value="Srinagar">Srinagar</option>
                   <option value="Dhanbad">Dhanbad</option>
                 </select>
-                <div class="input-place">
+                <div class="input-wrapper">
                   <input type="text" class="form-input" id="pickupAddress" name="pickupAddress" placeholder="Pickup address" required>
                 </div>
               </div>
+
+              <!-- Drop -->
               <div class="form-group">
                 <label for="drop">Drop Location<span>*</span></label>
-                <div class="input-place">
+                <div class="input-wrapper">
                   <select class="form-select" id="drop" name="drop" required>
                     <option value="">Select place</option>
                     <option value="Bangalore">Bangalore</option>
@@ -129,24 +131,21 @@
                   <input type="text" class="form-input" id="dropAddress" name="dropAddress" placeholder="Drop address" required>
                 </div>
               </div>
-
               <div class="form-group">
                 <label for="phone">Phone Number<span>*</span></label>
-                <div class="input-place">
+                <div class="input-wrapper">
                   <input type="tel" class="form-input" id="phone" name="phone" placeholder="Enter contact number" required>
                 </div>
               </div>
-
               <div class="form-group">
                 <label for="date">Shifting Date<span>*</span></label>
-                <div class="input-place">
+                <div class="input-wrapper">
                   <input type="date" class="form-input" id="date" name="date" required>
                 </div>
               </div>
-
               <div class="form-group">
                 <label for="size">House Size<span>*</span></label>
-                <div class="input-place">
+                <div class="input-wrapper">
                   <select class="form-select" id="size" name="size" required>
                     <option value="">Select House Size</option>
                     <option value="1bhk">1 BHK</option>
@@ -158,123 +157,16 @@
                   </select>
                 </div>
               </div>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="fare-calculator">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Fare Estimate</span>
-          <h2 class="section-title">Porter Truck Fare Calculator</h2>
-          <p class="section-desc">
-            Enter details to estimate fare. Rates are approximate based on standard Porter-style pricing.
-          </p>
-        </div>
-        <div class="mark-value">
-          <form class="quote-form" id="fareForm">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="loadWeight">Load Weight (kg):</label>
-                <div class="input-place">
-                  <input type="number" class="form-input" id="loadWeight" name="loadWeight" min="1" placeholder="e.g. 300" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="distance">Distance (km):</label>
-                <div class="input-place">
-                  <input type="number" class="form-input" id="distance" name="distance" min="1" placeholder="e.g. 15" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="truckType">Truck Type:</label>
-                <div class="input-place">
-                  <select class="form-select" id="truckType" name="truckType" required>
-                    <option value="">Select Truck Type</option>
-                    <option value="tataAce">Tata Ace (500kg) - Base ₹2000 + ₹2/km</option>
-                    <option value="miniTruck">Mini Truck (1000kg) - Base ₹3000 + ₹3/km</option>
-                    <option value="largeTruck">Large Truck (2000kg) - Base ₹5000 + ₹5/km</option>
-                  </select>
-                </div>
-              </div>
-
               <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-submit">
-                  Calculate Fare
+                  Check Price
                 </button>
               </div>
             </div>
           </form>
         </div>
-
-        <div class="fare-result">
-          <h3>Estimated Fare: <span id="estimatedFare">₹0</span></h3>
-          <p>Base Charge: <span id="baseCharge">₹0</span></p>
-          <p>Distance Charge (<span id="perKmLabel">₹0</span>/km): <span id="distanceCharge">₹0</span></p>
-          <p>GST (18%): <span id="gstAmount">₹0</span></p>
-          <p><strong>Total (incl. GST): <span id="totalFare">₹0</span></strong></p>
-
-          <a href="https://porter.in/trucks/pune" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Redirect to Official Fare Estimate &amp; Book
-          </a>
-        </div>
       </div>
     </section>
-  </main>
-
-  <footer class="footer" id="contact">
-    <div class="container">
-    </div>
-  </footer>
-
-  <script>
-    const fareForm = document.getElementById('fareForm');
-    const estimatedFareEl = document.getElementById('estimatedFare');
-    const baseChargeEl = document.getElementById('baseCharge');
-    const distanceChargeEl = document.getElementById('distanceCharge');
-    const perKmLabelEl = document.getElementById('perKmLabel');
-    const gstAmountEl = document.getElementById('gstAmount');
-    const totalFareEl = document.getElementById('totalFare');
-
-    fareForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const distance = parseFloat(document.getElementById('distance').value) || 0;
-      const truckType = document.getElementById('truckType').value;
-
-      let base = 0;
-      let perKm = 0;
-
-      if (truckType === 'tataAce') {
-        base = 2000;
-        perKm = 2;
-      } else if (truckType === 'miniTruck') {
-        base = 3000;
-        perKm = 3;
-      } else if (truckType === 'largeTruck') {
-        base = 5000;
-        perKm = 5;
-      }
-
-      const distanceCharge = perKm * distance;
-      const subtotal = base + distanceCharge;
-      const gst = subtotal * 0.18;
-      const total = subtotal + gst;
-
-      baseChargeEl.textContent = '₹' + base.toFixed(0);
-      distanceChargeEl.textContent = '₹' + distanceCharge.toFixed(0);
-      perKmLabelEl.textContent = '₹' + perKm.toFixed(0);
-      gstAmountEl.textContent = '₹' + gst.toFixed(0);
-      estimatedFareEl.textContent = '₹' + subtotal.toFixed(0);
-      totalFareEl.textContent = '₹' + total.toFixed(0);
-    });
-  </script>
-
     <section class="services" id="services">
       <div class="container">
         <div class="section-header">
@@ -315,7 +207,6 @@
         </section>
       </div>
     </section>
-
     <section class="stats" aria-labelledby="stats-heading">
       <div class="container">
         <h2 id="stats-heading">Thanks to you, we are growing!</h2>
@@ -339,7 +230,6 @@
         </div>
       </div>
     </section>
-
     <section class="news" aria-labelledby="news-heading">
       <div class="container">
         <h2 id="news-heading">In The News</h2>
@@ -353,7 +243,6 @@
         </div>
       </div>
     </section>
-
     <section class="faqs" aria-labelledby="faqs-heading">
       <div class="container">
         <h2 id="faqs-heading">Frequently Asked Questions</h2>
@@ -372,7 +261,6 @@
         </div>
       </div>
     </section>
-
     <section class="why-us" id="about">
       <div class="container">
         <div class="section-header">
@@ -402,5 +290,11 @@
         </div>
       </div>
     </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+    </div>
+  </footer>
 </body>
 </html>
